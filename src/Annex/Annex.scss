@@ -1,0 +1,86 @@
+@import 'src/_partials/_var';
+
+.left-column
+{
+	@include general;
+	
+	h3
+	{
+		font-weight: bold;
+	}
+	
+	ul
+	{
+		font-size: 0.9em;
+		
+		.adress
+		{
+			list-style-image: url('/img/home.png');
+		}
+		
+		.tel
+		{
+			list-style-image: url('/img/phone.png');
+		}
+		
+		.email
+		{
+			list-style-image: url('/img/arobase.png');
+		}
+		
+		.github
+		{
+			list-style-image: url('/img/githubLogoMini.png');
+		}
+		
+		.signalwowLogo
+		{
+			list-style-image: url('/img/signalwowLogoMini.png');
+		}
+		
+		.vihackLogoMini
+		{
+			list-style-image: url('/img/vihackLogoMini.png');
+		}
+		
+		.neowebtechLogoMini
+		{
+			list-style-image: url('/img/neowebtechLogoMini.png');
+		}
+		
+		.mtgsixcolorLogoMini
+		{
+			list-style-image: url('/img/mtgsixcolorLogoMini.png');
+		}
+		
+		.runatisLogoMini
+		{
+			list-style-image: url('/img/runatisLogoMini.png');
+		}
+		
+		.avuedetruffeLogoMini
+		{
+			list-style-image: url('/img/avuedetruffeLogoMini.png');
+		}
+		
+		.flagFr
+		{
+			list-style-image: url('/img/flagFr.png');
+		}
+		
+		.flagEn
+		{
+			list-style-image: url('/img/flagEn.png');
+		}
+		
+		.flagIt
+		{
+			list-style-image: url('/img/flagIt.png');
+		}
+	}
+	
+	article
+	{
+		padding-bottom: $general-padding;
+	}
+}
