@@ -1,5 +1,4 @@
 import React from 'react';
-// import 'augmented-ui/augmented.css'
 import './App.scss';
 import { archi } from './settings/archi';
 import Header from './Header/Header';
