@@ -1,0 +1,9 @@
+$main-color: rgba(100, 200, 100, 0.5);
+$general-padding: 0.5em;
+$backgroundCyberpunk: silver;
+$marge: 3vw;
+
+@mixin general
+{
+	padding: 1em;
+}

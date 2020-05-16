@@ -1,0 +1,68 @@
+@import 'src/_partials/_var';
+
+header
+{
+	@include general;
+	// height: 10em;
+	display: grid;
+	grid-template-areas: 	". . d d . ."
+							"p p d d . ."
+							"p p q q . .";
+	text-align: center;
+
+	.photo
+	{
+		grid-area: p;
+		justify-self: center;
+		padding: 0.5em;
+        --aug-border: 5px;
+        --aug-inset: 5px;
+        --aug-border-bg: #{$main-color};
+        --aug-inset-bg: #{$main-color};
+        --aug-br: 25px;
+		--aug-t-width: 65%;
+		--aug-t-height: 4em;
+		--aug-l-width: 4em;
+		--aug-l-height: 65%;
+		background-color: $backgroundCyberpunk;
+
+		img
+		{
+			max-width: 10em;
+			padding-top: 3em;
+			padding-left: 3em;
+		}
+	}
+
+	// h1
+	// {
+	// 	grid-area: n;
+	// }
+
+	// h2
+	// {
+	// 	grid-area: t;
+	// }
+
+	.title
+	{
+		grid-area: d;
+		--aug-border: 5px;
+	    --aug-inset: 5px;
+	    --aug-border-bg: #{$main-color};
+	    --aug-inset-bg: #{$main-color};
+	    --aug-tl: 25px;
+	    --aug-tr: 25px;
+	    --aug-bl: 25px;
+		--aug-br: 25px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	q
+	{
+		grid-area: q;
+		@include general;
+	}
+}
