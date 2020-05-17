@@ -1,0 +1,45 @@
+@import 'src/_partials/_var';
+
+.modal
+{
+	grid-area: m;
+	margin: 2em;
+	min-height: 30em;
+	--aug-border: 5px;
+	--aug-inset: 5px;
+	--aug-border-bg: #{$main-color};
+	--aug-inset-bg: #{$main-color};
+	--aug-tl: 25px;
+	--aug-tr: 25px;
+	--aug-bl: 25px;
+	--aug-br: 25px;
+	display: flex;
+	flex-direction: column;
+	@include general;
+
+	h2
+	{
+		text-align: center;
+	}
+
+	nav
+	{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	section
+	{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+		article
+		{
+			flex: 1 0 33%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}

@@ -8,7 +8,7 @@ const Contact = ({title, address, phone, mail, github}) =>
 			{title}
 		</h3>
 		<ul>
-			<li class="adress">
+			<li className="adress">
 				{address.main}<br />
 				{address.more}<br />
 				{address.zipcode}<br />

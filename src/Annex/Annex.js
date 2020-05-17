@@ -1,7 +1,6 @@
 import React from 'react';
 import './Annex.scss';
 import Contact from './Contact/Contact';
-import lastJob from './LastJob/LastJob';
 import LastJob from './LastJob/LastJob';
 import Project from './Project/Project';
 import Lang from './Lang/Lang';

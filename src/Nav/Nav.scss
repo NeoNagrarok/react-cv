@@ -1,0 +1,46 @@
+@import 'src/_partials/_var';
+
+.mainNav
+{
+	display: flex;
+	justify-content: space-around;
+	grid-area: n;
+	max-height: 5.5em;
+
+	.link
+	{
+		display: inline-block;
+		padding: 1.5em;
+		--aug-border: 5px;
+		--aug-inset: 5px;
+		--aug-border-bg: #{$main-color};
+		--aug-inset-bg: #{$main-color};
+		--aug-l-height: 1em;
+		--aug-r-height: 1em;
+		--aug-t-width: 65%;
+		--aug-t-height: 1em;
+		--aug-b-width: 65%;
+		--aug-b-height: 1em;
+		background-color: $backgroundCyberpunk;
+		color: black;
+		transition: transform 0.3s;
+
+		a
+		{
+			padding: $general-padding;
+			font-size: 1.5em;
+		}
+
+		&.current, &:hover, &:focus-within
+		{
+			transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+			background-color: black;
+			
+			a
+			{
+				color: silver;
+			}
+		}
+	}
+}

@@ -4,6 +4,7 @@ header
 {
 	@include general;
 	// height: 10em;
+	grid-area: h;
 	display: grid;
 	grid-template-areas: 	". . d d . ."
 							"p p d d . ."
@@ -33,16 +34,6 @@ header
 			padding-left: 3em;
 		}
 	}
-
-	// h1
-	// {
-	// 	grid-area: n;
-	// }
-
-	// h2
-	// {
-	// 	grid-area: t;
-	// }
 
 	.title
 	{

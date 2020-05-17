@@ -9,14 +9,14 @@ const Lang = ({title, list}) =>
 		</h3>
 		<ul>
 		{
-				list.map((m, i) => {
-					return (
-						<li className={m.class} key={i}>
-							{m.name} : {m.level}
-						</li>
-					)
-				})
-			}
+			list.map((m, i) => {
+				return (
+					<li className={m.class} key={i}>
+						{m.name} :	{m.level}
+					</li>
+				)
+			})
+		}
 		</ul>
 		</article>
 	)

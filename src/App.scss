@@ -10,4 +10,24 @@
 	border-width: 1px;
 	border-radius: 25px;
 	background-color: white;
+	font-size: 1.6em;
+
+	main
+	{
+		display: grid;
+		grid-template-areas:	"h h h h h h"
+								"a n n n n n"
+								"a m m m m m"
+								"a m m m m m"
+								"a m m m m m"
+								"a m m m m m"
+								"a m m m m m"
+								"a m m m m m"
+								"a m m m m m"
+								"a m m m m m"
+								"a m m m m m"
+								"a m m m m m"
+								"a m m m m m"
+								"f f f f f f";
+	}
 }

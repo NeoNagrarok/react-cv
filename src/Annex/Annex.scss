@@ -3,7 +3,13 @@
 .left-column
 {
 	@include general;
-	
+	grid-area: a;
+
+	article
+	{
+		padding-left: 3em;
+	}
+
 	h3
 	{
 		font-weight: bold;
