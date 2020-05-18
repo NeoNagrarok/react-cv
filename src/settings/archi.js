@@ -35,7 +35,7 @@ export const archi =
                             "content": [
                                 "ReactJs",
                                 "SASS",
-                                "Laravel (nptions)",
+                                "Laravel (notions)",
                                 "Bootstrap"
                             ]
                         },
@@ -43,7 +43,7 @@ export const archi =
                             "title": "CMS",
                             "content": [
                                 "PrestaShop",
-                                "WordPress"
+                                "WordPress (notions)"
                             ]
                         }
                     }
@@ -59,7 +59,7 @@ export const archi =
                             ]
                         },
                         "tools": {
-                            "title": "Outils et cie",
+                            "title": "Workflow",
                             "content": [
                                 "VSCode",
                                 "Git",
@@ -173,6 +173,17 @@ export const archi =
                 "perso": {
                     "title": "Personnelles",
                     "content": {
+                        "cvOne": {
+                            "title": "CV en ligne V1 : fin 2019",
+                            "content": [
+                                "CV réalisé en HTML5 et CSS3 ainsi qu'avec SASS, Bootstrap et Augmented-ui. \
+                                Hébergé sur Github"
+                            ],
+                            "link": {
+                                "text": "https://neonagrarok.github.io/",
+                                "url": "https://neonagrarok.github.io/"
+                            }
+                        },
                         "neowebtech": {
                             "title": "NeoWebTech : 04/2019 à 6/2019",
                             "content": [
@@ -409,6 +420,6 @@ export const archi =
         }
     },
     "footer": {
-        "Technologies utilisées": "HTML5, CSS3, SASS, React, Augmented-Ui"
+        "content": "Technologies utilisées : HTML5, CSS3, SASS, React, Augmented-Ui"
     }
 }

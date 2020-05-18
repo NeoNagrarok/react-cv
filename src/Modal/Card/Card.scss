@@ -1,0 +1,42 @@
+@import 'src/_partials/_var';
+
+.card
+{
+	background-color: white;
+	margin: 1em;
+	padding: 2.5em;
+	flex: 1 0 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	--aug-border: 5px;
+	--aug-inset: 5px;
+	--aug-border-bg: #{$main-color};
+	--aug-inset-bg: #{$main-color};
+	--aug-t-width: 60%;
+	--aug-b-width: 60%;
+	--aug-l-height: 60%;
+	--aug-r-height: 60%;
+	--aug-tl: 15px;
+	--aug-tr: 15px;
+	--aug-bl: 15px;
+	--aug-br: 15px;
+
+	h4
+	{
+		text-align: center;
+	}
+
+	ul
+	{
+		background-color: #{$main-color};
+		padding: 1em;
+		width: calc( 100% - 2em );
+		height: 100%;
+
+		li
+		{
+			list-style: none;
+		}
+	}
+}

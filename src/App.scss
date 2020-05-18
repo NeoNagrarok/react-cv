@@ -30,4 +30,12 @@
 								"a m m m m m"
 								"f f f f f f";
 	}
+
+	footer
+	{
+		grid-area: f;
+		padding: 1.5em;
+		padding-right: 5em;
+		text-align: right;
+	}
 }

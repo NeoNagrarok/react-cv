@@ -67,6 +67,9 @@ function App() {
           />
         </Switch>
       </Router>
+      <footer>
+        {archi.footer.content}
+      </footer>
     </main>
   );
 }

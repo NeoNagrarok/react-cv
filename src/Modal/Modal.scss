@@ -26,6 +26,28 @@
 	{
 		display: flex;
 		justify-content: space-around;
+		padding: 1em;
+
+		a
+		{
+			padding: 1.5em;
+			--aug-border: 5px;
+			--aug-inset: 5px;
+			--aug-border-bg: #{$main-color};
+			--aug-inset-bg: #{$main-color};
+			--aug-t-width: 50%;
+			--aug-t-height: 10px;
+			background-color: $backgroundCyberpunk;
+			color: black;
+			font-size: 1.1em;
+			transition: 1s all;
+
+			&.current, &:hover, &:focus
+			{
+				background-color: black;
+				color: silver;
+			}
+		}
 	}
 
 	section
@@ -33,13 +55,5 @@
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
-
-		article
-		{
-			flex: 1 0 33%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
 	}
 }

@@ -4,6 +4,7 @@ import {
 	Link
 } from "react-router-dom";
 import './Modal.scss';
+import Card from './Card/Card'
 
 const Modal = ({match, history, block}) =>
 {
@@ -20,9 +21,11 @@ const Modal = ({match, history, block}) =>
 			nav =	<>
 						{nav}
 						<Link
+							className={typeof currentCategory !== undefined && currentCategory === categories ? 'current' : ''}
 							to={"/" + currentKey + "/" + categories}
 							key={block.content[categories]}
 							onClick={() => history.replace('/' + currentKey + '/' + categories)}
+							augmented-ui="t-clip-x tl-clip tr-clip bl-clip-x br-clip-x exe"
 						>
 							{block.content[categories].title}
 						</Link>
@@ -40,28 +43,10 @@ const Modal = ({match, history, block}) =>
 			for (const sub in block.content[currentCategory].content)
 				article =	<>
 								{article}
-								<article>
-									<h4>
-										{block.content[currentCategory].content[sub].title}
-									</h4>
-									<ul>
-										{block.content[currentCategory].content[sub].content.map((m, i) => <li key={i}>{m}</li>)}
-									</ul>
-									{
-										block.content[currentCategory].content[sub].link
-										?
-											<aside>
-												<a
-													href={"http://" + block.content[currentCategory].content[sub].link.url}
-													target="_blank"
-												>
-													{block.content[currentCategory].content[sub].link.text}
-												</a>
-											</aside>
-										:
-										''
-									}
-								</article>
+								<Card
+									title={block.content[currentCategory].content[sub].title}
+									sub={block.content[currentCategory].content[sub]}
+								/>
 							</>;
 			article = <section><h3 className="screen-reader-text">{block.content[currentCategory].title}</h3>{article}</section>;
 		}
