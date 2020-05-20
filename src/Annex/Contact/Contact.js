@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Contact = ({title, address, phone, mail, github}) =>
+const Contact = ({title, address, phone, mail, github, linkedin}) =>
 {
 	return (
 		<article>
@@ -27,6 +27,11 @@ const Contact = ({title, address, phone, mail, github}) =>
 			<li className="github">
 				<a href={github.url} target="_blank">
 					{github.text}
+				</a>
+			</li>
+			<li className="linkedin">
+				<a href={linkedin.url} target="_blank">
+					{linkedin.text}
 				</a>
 			</li>
 		</ul>

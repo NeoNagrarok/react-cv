@@ -24,6 +24,7 @@
 		background-color: $backgroundCyberpunk;
 		color: black;
 		transition: transform 0.3s;
+		text-align: center;
 
 		a
 		{
@@ -41,6 +42,19 @@
 			{
 				color: silver;
 			}
+		}
+	}
+
+	@media screen and (max-width: $breakpoint-one) 
+	{
+		flex-wrap: wrap;
+		padding-left: $margeToPush;
+		position: absolute;
+		top: calc(50% - #{$top-from} / 2 + #{$quote-from} / 2);
+		.link
+		{
+			width: 40%;
+			margin: 1.5em;
 		}
 	}
 }

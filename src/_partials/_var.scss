@@ -2,6 +2,11 @@ $main-color: rgba(100, 200, 100, 0.5);
 $general-padding: 0.5em;
 $backgroundCyberpunk: silver;
 $marge: 3vw;
+$breakpoint-one: 1060px;
+$margeToPush: 50px;
+$top-from: 10em;
+$quote-from: 2em;
+$bottom-from: 3em;
 
 @mixin general
 {

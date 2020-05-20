@@ -12,8 +12,6 @@ import Nav from './Nav/Nav';
 import Modal from './Modal/Modal';
 
 function App() {
-  console.log('archi')
-  console.log(archi)
   return (
     <main className="App">
       <Header {...archi.header} />

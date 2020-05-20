@@ -34,8 +34,41 @@
 	footer
 	{
 		grid-area: f;
-		padding: 1.5em;
 		padding-right: 5em;
 		text-align: right;
+		height: $bottom-from;
+	}
+
+	@media screen and (max-width: $breakpoint-one) 
+	{
+		position: absolute;
+		top:0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		margin: 0;
+		width: 100vw;
+		border-radius: initial;
+		grid-template-areas: initial;
+
+		main
+		{
+			grid-template-areas: initial;
+			display: initial;
+			&>section:not(.left-column):not(.modal)
+			{
+				position: relative;
+				left: $margeToPush;
+				padding-right: $margeToPush;
+			}
+
+			footer
+			{
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+		}
+
 	}
 }

@@ -366,6 +366,10 @@ export const archi =
             "github": {
                 "text": "Github",
                 "url": "https://github.com/NeoNagrarok"
+            },
+            "linkedin": {
+                "text": "LinkedIn",
+                "url": "https://www.linkedin.com/in/remi-etienne"
             }
         },
         "lastJob": {

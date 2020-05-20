@@ -39,6 +39,11 @@
 			list-style-image: url('/img/githubLogoMini.png');
 		}
 		
+		.linkedin
+		{
+			list-style-image: url('/img/linkedinLogoMini.png');
+		}
+		
 		.signalwowLogo
 		{
 			list-style-image: url('/img/signalwowLogoMini.png');
@@ -88,5 +93,81 @@
 	article
 	{
 		padding-bottom: $general-padding;
+	}
+
+	.displayContact
+	{
+		display: none;
+	}
+
+	@media screen and (max-width: $breakpoint-one) 
+	{
+		position: absolute;
+		top: $top-from;
+		right: 100%;
+		transform: translateX($margeToPush);
+		background-color: white;
+		z-index: 5000;
+		overflow: auto;
+		padding-right: calc(#{$margeToPush} + 1em);
+		padding-top: 5em;
+		transition: all 1s;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		height: calc(100% - #{$top-from});
+		width: 100%;
+
+		.displayContact
+		{
+			display: initial;
+			position: absolute;
+			display: inline-block;
+			width: $margeToPush;
+			height: 100%;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			
+			.arrowRight
+			{
+				display: inline-block;
+				// --aug-border: 5px;
+				// --aug-inset: 5px;
+				--aug-border-bg: #{$main-color};
+				--aug-inset-bg: #{$main-color};
+				--aug-tr: 25px;
+				--aug-br: 25px;
+				--aug-l-width: 5px;
+				--aug-r-width: 50px;
+				width: 2em;
+				height: 2em;
+				transform: translateX(-50%);
+				margin-top: 1em;
+				margin-botom: 1em;
+			}
+			.arrowLeft
+			{
+				display: inline-block;
+				// --aug-border: 5px;
+				// --aug-inset: 5px;
+				--aug-border-bg: #{$main-color};
+				--aug-inset-bg: #{$main-color};
+				--aug-tl: 25px;
+				--aug-bl: 25px;
+				--aug-l-width: 50px;
+				--aug-r-width: 5px;
+				width: 2em;
+				height: 2em;
+				transform: translateX(-50%);
+				margin-top: 1em;
+				margin-botom: 1em;
+			}
+		}
+
+		&.show
+		{
+			transform: translateX(100%);
+		}
 	}
 }

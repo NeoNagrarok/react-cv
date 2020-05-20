@@ -56,4 +56,51 @@ header
 		grid-area: q;
 		@include general;
 	}
+
+	@media screen and (max-width: $breakpoint-one) 
+	{
+		padding: 0;
+		grid-template-areas: initial;
+		grid-template-columns: 10em calc(100% - 10em);
+		grid-template-rows: $top-from 2em;
+
+		.title
+		{
+			--aug-tl: 0px;
+			--aug-tr: 0px;
+			--aug-bl: 0px;
+			--aug-br: 0px;
+			width: 100%;
+			grid-column: 2;
+			grid-row: 1;
+		}
+
+		.photo
+		{
+			grid-column: 1;
+			grid-row: 1;
+			padding: 0;
+			--aug-t-width: 0%;
+			--aug-t-height: 0em;
+			--aug-l-width: 0em;
+			--aug-l-height: 0%;
+			--aug-br: 0px;
+			justify-self: left;
+
+			img
+			{
+				max-width: auto;
+				padding-top: 0;
+				padding-left: 0;
+			}
+		}
+
+		q
+		{
+			grid-column: 1 / span 2;
+			grid-row: 2;
+			height: $quote-from;
+			width: 100%;
+		}
+	}
 }
